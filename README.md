@@ -42,7 +42,7 @@ python -m pip install requests
 
 7. **Specify Script:**
    - In the "Script" section, choose the Python script option.
-   - Click "Browse" and select the `meraki_sensor.py` script.
+   - Click "Browse" and select the `meraki_mt_sensor.py` script.
 
 8. **Save Settings:**
     Save the sensor settings.
@@ -53,7 +53,7 @@ python -m pip install requests
 If you are looking to debug the script locally run the below
 1. Execute the script with the appropriate PRTG parameters.
    ```bash
-   python meraki_sensor.py '{"params": "<serialNumber>"}'
+   python meraki_mt_sensor.py '{"params": "<serialNumber>"}'
    ```
    Replace `<serialNumber>` with the specific device serial number.
 
@@ -61,7 +61,7 @@ If you are looking to debug the script locally run the below
 You can pass additional parameters to customize the behavior of the script. Here's an example of how to include additional parameters:
 
 ```bash
-python meraki_sensor.py '{"params": "<serialNumber>", "additional_param": "<value>"}'
+python meraki_mt_sensor.py '{"params": "<serialNumber>", "additional_param": "<value>"}'
 ```
 
 Replace `<value>` with the specific value for the additional parameter.
